@@ -17,8 +17,45 @@
 
     </style>
 </head>
-<body >
+<body>
+    <section class="hidden fixed top-0 right-0 w-[200px] bg-black h-auto z-50 flex flex-col justify-start p-5 gap-5" id="sect">
+
+        
+        <div class="flex justify-end cursor-pointer" id="close-btn">
+            <svg class="w-[50px] h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 6l12 12M6 18L18 6" />
+            </svg>
+        </div>
+
+        
+        <div class="flex items-center gap-3 cursor-pointer hover:bg-gray-800 p-2 rounded" id="resume">
+            <svg class="w-6 h-6 text-white text-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m8 18v-1c0-1.33-2.67-2-4-2s-4 .67-4 2v1zm-4-8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2" />
+            </svg>
+            <span class="text-white">Resume</span>
+        </div>
+
+        
+        <div class="flex items-center gap-3 cursor-pointer hover:bg-gray-800 p-2 rounded" id="contact">
+            <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2" />
+            </svg>
+            <a href="contact.html"><span class="text-white">Contact Me</span></a>
+        </div>
+    </section>
+
     <header class="px-4">
+
+        <section class="flex justify-between items-center mx-4">
+            <div class="text-[20px] font-bold">Vincent</div>
+            <div class="text-[50px]" id="open-btn">=</div>
+        </section>
+
         <section >
             <img src="Calling.png" alt="A calling image" class="w-90">
             <div class="border-b-3 relative bottom-10 pl-3 mx-4"></div>
@@ -26,22 +63,28 @@
     </header>
 
     <main class="px-4" >
-        <section class="flex flex-col gap-4 pb-10">
-            <input type="text" placeholder="Your name" class="p-2 rounded rounded-sm border border text-black">
-            <input type="email" placeholder="Email" class="p-2 rounded rounded-sm border text-black">
-            <textarea placeholder="How can i help you" class="text-black p-2 h-40 border rounded-sm "></textarea>
-            <button class="bg-black rounded rounded-sm p-2 text-white w-30">Get in Touch</button>
-        </section>
+        <form action="https://formsubmit.co/omoseebivincent@gmail.com" method="POST" class="flex flex-col gap-4">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Message">
+
+            <input class="p-3 border rounded" type="text" name="name" placeholder="Your Name" required>
+            <input class="p-3 border rounded" type="email" name="email" placeholder="Your Email" required>
+
+            <textarea class="p-3 border rounded" name="message" placeholder="Message" required></textarea>
+
+            <button class="p-3 bg-black text-white rounded" type="submit">Send Message</button>
+        </form>
 
 
-        <section>
-             <section class=" flex gap-4">
-                <a href=""><svg class="w-10 border p-2 cursor-pointer bg-black text-white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2" class="font-bold"/></svg></a>
-                <a href=""><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
-                <a href=""><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-                <a href=""><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-            </section>
+        <section class=" flex gap-4 pt-5">
+            <a href=""><svg class="w-10 border p-2 cursor-pointer bg-black text-white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2" class="font-bold"/></svg></a>
+            <a href=""><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href=""><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            <a href=""><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
         </section>
+       
     </main>
 
     <footer>
@@ -50,5 +93,6 @@
             <div class="text-white">&copy vincentcodes2025</div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

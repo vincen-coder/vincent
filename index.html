@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omoseebi Vincent | Front-End Engineer</title>
+    <title>Omoseebi Vincent | Frontend Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -11,162 +11,167 @@
     
     <style>
         body{
-            font-family: "Sora";
-    
+            font-family: "Sora", sans-serif;
         }
-
     </style>
 </head>
-<body class="">
+<body class="bg-gray-50 text-gray-900">
+    
     <div id="preloader"
         class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-700 ease-out">
-    
         <div class="flex flex-col items-center">
             <h1 class="font-bold text-xl">Vincent portfolio</h1>
-    
             <span class="text-sm font-light tracking-widest text-gray-500 uppercase animate-pulse">
                 Loading
             </span>
         </div>
-    
     </div>
 
-    <section class="hidden fixed top-0 right-0 w-[200px] bg-black h-auto z-50 flex flex-col justify-start p-5 gap-5" id="sect">
-
-        
+    <section class="hidden fixed top-0 right-0 w-[250px] bg-black h-screen z-50 flex flex-col justify-start p-5 gap-5 shadow-2xl transition-all" id="sect">
         <div class="flex justify-end cursor-pointer" id="close-btn">
-            <svg class="w-[50px] h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            <svg class="w-[40px] h-8 text-white hover:text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M6 6l12 12M6 18L18 6" />
             </svg>
         </div>
-
         
-        <div class="flex items-center gap-3 cursor-pointer hover:bg-gray-800 p-2 rounded" id="resume">
-            <svg class="w-6 h-6 text-white text-[50px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+        <div class="flex items-center gap-3 cursor-pointer hover:bg-gray-800 p-2 rounded transition" id="resume">
+            <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                    d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m8 18v-1c0-1.33-2.67-2-4-2s-4 .67-4 2v1zm-4-8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2" />
+                <path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m8 18v-1c0-1.33-2.67-2-4-2s-4 .67-4 2v1zm-4-8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2" />
             </svg>
             <span class="text-white">Resume</span>
         </div>
-
         
-        <div class="flex items-center gap-3 cursor-pointer hover:bg-gray-800 p-2 rounded" id="contact">
+        <div class="flex items-center gap-3 cursor-pointer hover:bg-gray-800 p-2 rounded transition" id="contact">
             <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                    d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2" />
+                <path d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2" />
             </svg>
             <a href="contact.html"><span class="text-white">Contact Me</span></a>
         </div>
     </section>
 
+    <header class="max-w-6xl mx-auto w-full overflow-hidden">
+        <nav>
+            <section class="flex justify-between items-center px-4 py-4">
+                <div class="text-[20px] font-bold">Vincent.</div>
+                <div class="text-[40px] cursor-pointer hover:scale-105 transition" id="open-btn">=</div>
+            </section>
+        </nav>
 
-    <header>
-        <section class="flex justify-between items-center pl-3 mx-4">
-            <div class="text-[20px] font-bold">Vincent</div>
-            <div class="text-[50px]" id="open-btn">=</div>
-        </section>
+        <div class="md:flex justify-between items-center mt-4">
+            <section class="md:order-1 px-4 flex justify-center md:justify-end w-full md:w-1/2">
+                <div class="relative w-fit mx-auto">
+                    
+                    <img src="Coding 9.png" alt="A coding Hero image" class="relative z-10 w-full max-w-[400px] md:max-w-[550px] object-cover">
+                    
+                    <div class="border-b-2 relative bottom-10 pl-3 mx-4 border md:bottom-14"></div>
+                </div>
+            </section>
 
-        <section >
-            <img src="Coding 9.png" alt="A coding Hero image" class="w-90">
-            <div class="border-b-3 relative bottom-10 pl-3 mx-4"></div>
-        </section>
+            <section class="mt-8 flex flex-col justify-center justify-items-center md:mt-0 px-4 md:w-1/2">
+                <div class="text-[30px] leading-tight md:text-[50px] font-light">
+                    Hello I'm <span class="font-bold">Vincent</span>,<br>
+                    Frontend <span class="font-extralight text-gray-600">Engineer.</span>
+                </div>
 
-        <section>
-            <div class="text-[30px] pl-3 mx-4">Hello I'm <span class="font-bold">Vincent</span>,<br>Frontend <span class="font-extralight">Developer.</span></div>
-        </section>
-
-        <section class="mt-4 flex gap-4 pl-3 mx-4">
-            <a href="https://github.com/vincen-coder" target="_blank"><svg class="w-10 border p-2 cursor-pointer bg-black text-white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2" class="font-bold"/></svg></a>
-            <a href="https://www.linkedin.com/in/omoseebi-vincent/" target="_blank"><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="https://www.instagram.com/vincentomoseebi" target="_blank"><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-            <a href="https://x.com/lagos_vin" target="_blank"><svg class="w-10 border p-2 cursor-pointer" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-        </section>
+                <section class="mt-6 flex gap-4">
+                    <a href="https://github.com/vincen-coder" target="_blank" class="hover:-translate-y-1 transition"><svg class="w-10 h-10 border-2 border-black p-2 bg-black text-white rounded-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+                    <a href="https://www.linkedin.com/in/omoseebi-vincent/" target="_blank" class="hover:-translate-y-1 transition"><svg class="w-10 h-10 border-2 border-black p-2 rounded-lg hover:bg-gray-200 transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    <a href="https://www.instagram.com/vincentomoseebi" target="_blank" class="hover:-translate-y-1 transition"><svg class="w-10 h-10 border-2 border-black p-2 rounded-lg hover:bg-gray-200 transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                    <a href="https://x.com/lagos_vin" target="_blank" class="hover:-translate-y-1 transition"><svg class="w-10 h-10 border-2 border-black p-2 rounded-lg hover:bg-gray-200 transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                </section>
+            </section>
+        </div>
     </header>
 
-    <main class="mt-15">
+    <main class="mt-16 md:mt-24">
 
-        <section class="text-[30px] text-center ">My <span class="font-bold">Skills</span></section>
+        <section class="text-[30px] text-center mb-8">My <span class="font-bold">Skills</span></section>
 
-        <section class="grid grid-cols-2 gap-4 items-center pb-14 pl-3 mx-4 mt-10 ">
-            <section class="border-2 p-4 w-32 flex flex-col items-center">
-                <svg class="w-15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><mask id="SVG5shBabjy"><g fill="none" stroke-width="4"><path fill="#fff" stroke="#fff" d="M37.804 5H10.196a2 2 0 0 0-1.991 2.187l2.688 28.666a2 2 0 0 0 1.153 1.63l11.116 5.13a2 2 0 0 0 1.676 0l11.116-5.13a2 2 0 0 0 1.154-1.63l2.687-28.666A2 2 0 0 0 37.804 5Z"/><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M32 12H16l1 9h14l-1 11l-6 3l-6-3l-.5-5"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#SVG5shBabjy)"/></svg>
-                <div class="font-bold">Html</div>
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 px-4 pb-14 max-w-4xl mx-auto">
+            
+            <section class="border-2 p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 bg-white rounded-lg aspect-square">
+                <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><mask id="SVG5shBabjy"><g fill="none" stroke-width="4"><path fill="#fff" stroke="#fff" d="M37.804 5H10.196a2 2 0 0 0-1.991 2.187l2.688 28.666a2 2 0 0 0 1.153 1.63l11.116 5.13a2 2 0 0 0 1.676 0l11.116-5.13a2 2 0 0 0 1.154-1.63l2.687-28.666A2 2 0 0 0 37.804 5Z"/><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M32 12H16l1 9h14l-1 11l-6 3l-6-3l-.5-5"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#SVG5shBabjy)"/></svg>
+                <div class="font-bold mt-2">HTML</div>
             </section>
-            <section class="border-2 p-4 w-32 flex flex-col items-center">
-                <svg  class="w-15 text-black" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M4 1.5h8A2.5 2.5 0 0 1 14.5 4v8a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 12V4A2.5 2.5 0 0 1 4 1.5"/><path stroke-width="0.814" d="M10.24 11.53c0 .58.438 1.038.96 1.035l.453-.004c.522-.003.949-.451.949-1.033c0-.58-.427-1.065-.95-1.065h-.451c-.523 0-.95-.486-.95-1.066s.427-1.038.95-1.038h.452c.522 0 .951.458.951 1.039M6.8 11.529c0 .58.438 1.04.96 1.036l.465-.004c.523-.003.936-.451.936-1.031s-.409-1.066-.931-1.066h-.47c-.522 0-.949-.485-.949-1.066c0-.58.427-1.037.95-1.037h.451c.523 0 .964.457.964 1.037M3.407 11.53c0 .58.438 1.052.96 1.052h.452c.522 0 .95-.457.95-1.038m.01-2.131c0-.58-.437-1.038-.96-1.038h-.451c-.523 0-.96.468-.96 1.05v2.118"/></g></svg>
-                <div class="font-bold">css</div>
+
+            <section class="border-2 p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 bg-white rounded-lg aspect-square">
+                <svg  class="w-16 h-16 text-black" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M4 1.5h8A2.5 2.5 0 0 1 14.5 4v8a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 12V4A2.5 2.5 0 0 1 4 1.5"/><path stroke-width="0.814" d="M10.24 11.53c0 .58.438 1.038.96 1.035l.453-.004c.522-.003.949-.451.949-1.033c0-.58-.427-1.065-.95-1.065h-.451c-.523 0-.95-.486-.95-1.066s.427-1.038.95-1.038h.452c.522 0 .951.458.951 1.039M6.8 11.529c0 .58.438 1.04.96 1.036l.465-.004c.523-.003.936-.451.936-1.031s-.409-1.066-.931-1.066h-.47c-.522 0-.949-.485-.949-1.066c0-.58.427-1.037.95-1.037h.451c.523 0 .964.457.964 1.037M3.407 11.53c0 .58.438 1.052.96 1.052h.452c.522 0 .95-.457.95-1.038m.01-2.131c0-.58-.437-1.038-.96-1.038h-.451c-.523 0-.96.468-.96 1.05v2.118"/></g></svg>
+                <div class="font-bold mt-2">CSS</div>
             </section>
-            <section class="border-2 p-4 w-32 flex flex-col items-center">
-                <svg class="w-15 " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16"><path fill="#000" d="M2 2v12h12V2zm6 6h1v4a1.003 1.003 0 0 1-1 1H7a1.003 1.003 0 0 1-1-1v-1h1v1h1zm3 0h2v1h-2v1h1a1.003 1.003 0 0 1 1 1v1a1.003 1.003 0 0 1-1 1h-2v-1h2v-1h-1a1.003 1.003 0 0 1-1-1V9a1.003 1.003 0 0 1 1-1"/></svg>
-                <div class="font-bold">JavaScript</div>
+
+            <section class="border-2 p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 bg-white rounded-lg aspect-square">
+                <svg class="w-16 h-16 " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16"><path fill="#000" d="M2 2v12h12V2zm6 6h1v4a1.003 1.003 0 0 1-1 1H7a1.003 1.003 0 0 1-1-1v-1h1v1h1zm3 0h2v1h-2v1h1a1.003 1.003 0 0 1 1 1v1a1.003 1.003 0 0 1-1 1h-2v-1h2v-1h-1a1.003 1.003 0 0 1-1-1V9a1.003 1.003 0 0 1 1-1"/></svg>
+                <div class="font-bold mt-2">JavaScript</div>
             </section>
-            <section class="border-2 p-4 w-32 flex flex-col items-center bg-black text-white">
-                <svg class="w-15 " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="#fff" d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173a3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921c-.969 1.379-2.44 2.207-4.259 1.231c-1.253-.673-2.19-3.438-5.959-3.318M6.8 11.979A4.77 4.77 0 0 0 2 16.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921c-.97 1.379-2.44 2.208-4.259 1.231c-1.253-.673-2.19-3.443-5.963-3.317"/></svg>
-                <div class="font-bold">Tailwind</div>
+
+            <section class="border-2 p-6 flex flex-col items-center justify-center bg-black text-white hover:shadow-lg transition duration-300 rounded-lg aspect-square">
+                <svg class="w-16 h-16 " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="#fff" d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173a3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921c-.969 1.379-2.44 2.207-4.259 1.231c-1.253-.673-2.19-3.438-5.959-3.318M6.8 11.979A4.77 4.77 0 0 0 2 16.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921c-.97 1.379-2.44 2.208-4.259 1.231c-1.253-.673-2.19-3.443-5.963-3.317"/></svg>
+                <div class="font-bold mt-2">Tailwind</div>
             </section>
-            <section class="border-2 p-4 w-32 flex flex-col items-center">
-                <svg class="w-15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="11.245" r="1.785" fill="#000"/><path fill="#000" d="m7.002 14.794l-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452S3.674 8.53 6.607 7.789l.395-.1l.111.391a19.5 19.5 0 0 0 1.136 2.983l.085.178l-.085.178c-.46.963-.841 1.961-1.136 2.985zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542c0 .954 1.368 1.913 3.598 2.54q.41-1.304.985-2.54a20 20 0 0 1-.985-2.542m10.572 6.095l-.11-.392a19.6 19.6 0 0 0-1.137-2.984l-.085-.177l.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39l.395.1c2.935.741 4.617 2 4.617 3.453s-1.683 2.711-4.617 3.452zm-.41-3.553c.4.866.733 1.718.987 2.54c2.23-.627 3.599-1.586 3.599-2.54c0-.956-1.368-1.913-3.599-2.542a21 21 0 0 1-.987 2.542"/><path fill="#000" d="m6.419 8.695l-.11-.39c-.826-2.908-.576-4.991.687-5.717c1.235-.715 3.222.13 5.303 2.265l.284.292l-.284.291a20 20 0 0 0-2.02 2.474l-.113.162l-.196.016a20 20 0 0 0-3.157.509zm1.582-5.529q-.337 0-.589.145c-.828.477-.974 2.138-.404 4.38q1.337-.297 2.696-.417a21 21 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985m7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291l.283-.29a20 20 0 0 0 2.021-2.477l.112-.16l.194-.019a19.5 19.5 0 0 0 3.158-.507l.395-.1l.111.391c.822 2.906.573 4.992-.688 5.718a2 2 0 0 1-1.005.257m-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986q.339-.001.589-.145c.829-.478.976-2.142.404-4.384q-1.335.299-2.698.419a20.5 20.5 0 0 1-1.71 2.124"/><path fill="#000" d="m17.58 8.695l-.395-.099a19.5 19.5 0 0 0-3.158-.509l-.194-.017l-.112-.162A19.6 19.6 0 0 0 11.7 5.434l-.283-.291l.283-.29c2.08-2.134 4.066-2.979 5.303-2.265c1.262.727 1.513 2.81.688 5.717zm-3.287-1.421c.954.085 1.858.228 2.698.417c.571-2.242.425-3.903-.404-4.381c-.824-.477-2.375.253-4.004 1.841q.926 1.005 1.71 2.123M8.001 20.15a2 2 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391l.395.1c.964.243 2.026.414 3.158.507l.194.019l.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29l-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522m-.993-5.362c-.57 2.242-.424 3.906.404 4.384c.825.47 2.371-.255 4.005-1.842a21 21 0 0 1-1.713-2.123a21 21 0 0 1-2.696-.419"/><path fill="#000" d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017l-.113-.162a26 26 0 0 1-1.126-1.769a26 26 0 0 1-.971-1.859l-.084-.177l.084-.179q.448-.948.971-1.858c.347-.596.726-1.192 1.126-1.77l.113-.16l.196-.018a25 25 0 0 1 4.198 0l.194.019l.113.16a25 25 0 0 1 2.1 3.628l.083.179l-.083.177a25 25 0 0 1-2.1 3.628l-.113.162l-.194.017c-.706.057-1.412.087-2.098.087m-1.834-.904c1.235.093 2.433.093 3.667 0a24.5 24.5 0 0 0 1.832-3.168a24 24 0 0 0-1.832-3.168a24 24 0 0 0-3.667 0a24 24 0 0 0-1.832 3.168a25 25 0 0 0 1.832 3.168"/></svg>
-                <div class="font-bold">React</div>
+
+            <section class="border-2 p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 bg-white rounded-lg aspect-square">
+                <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="11.245" r="1.785" fill="#000"/><path fill="#000" d="m7.002 14.794l-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452S3.674 8.53 6.607 7.789l.395-.1l.111.391a19.5 19.5 0 0 0 1.136 2.983l.085.178l-.085.178c-.46.963-.841 1.961-1.136 2.985zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542c0 .954 1.368 1.913 3.598 2.54q.41-1.304.985-2.54a20 20 0 0 1-.985-2.542m10.572 6.095l-.11-.392a19.6 19.6 0 0 0-1.137-2.984l-.085-.177l.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39l.395.1c2.935.741 4.617 2 4.617 3.453s-1.683 2.711-4.617 3.452zm-.41-3.553c.4.866.733 1.718.987 2.54c2.23-.627 3.599-1.586 3.599-2.54c0-.956-1.368-1.913-3.599-2.542a21 21 0 0 1-.987 2.542"/><path fill="#000" d="m6.419 8.695l-.11-.39c-.826-2.908-.576-4.991.687-5.717c1.235-.715 3.222.13 5.303 2.265l.284.292l-.284.291a20 20 0 0 0-2.02 2.474l-.113.162l-.196.016a20 20 0 0 0-3.157.509zm1.582-5.529q-.337 0-.589.145c-.828.477-.974 2.138-.404 4.38q1.337-.297 2.696-.417a21 21 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985m7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291l.283-.29a20 20 0 0 0 2.021-2.477l.112-.16l.194-.019a19.5 19.5 0 0 0 3.158-.507l.395-.1l.111.391c.822 2.906.573 4.992-.688 5.718a2 2 0 0 1-1.005.257m-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986q.339-.001.589-.145c.829-.478.976-2.142.404-4.384q-1.335.299-2.698.419a20.5 20.5 0 0 1-1.71 2.124"/><path fill="#000" d="m17.58 8.695l-.395-.099a19.5 19.5 0 0 0-3.158-.509l-.194-.017l-.112-.162A19.6 19.6 0 0 0 11.7 5.434l-.283-.291l.283-.29c2.08-2.134 4.066-2.979 5.303-2.265c1.262.727 1.513 2.81.688 5.717zm-3.287-1.421c.954.085 1.858.228 2.698.417c.571-2.242.425-3.903-.404-4.381c-.824-.477-2.375.253-4.004 1.841q.926 1.005 1.71 2.123M8.001 20.15a2 2 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391l.395.1c.964.243 2.026.414 3.158.507l.194.019l.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29l-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522m-.993-5.362c-.57 2.242-.424 3.906.404 4.384c.825.47 2.371-.255 4.005-1.842a21 21 0 0 1-1.713-2.123a21 21 0 0 1-2.696-.419"/><path fill="#000" d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017l-.113-.162a26 26 0 0 1-1.126-1.769a26 26 0 0 1-.971-1.859l-.084-.177l.084-.179q.448-.948.971-1.858c.347-.596.726-1.192 1.126-1.77l.113-.16l.196-.018a25 25 0 0 1 4.198 0l.194.019l.113.16a25 25 0 0 1 2.1 3.628l.083.179l-.083.177a25 25 0 0 1-2.1 3.628l-.113.162l-.194.017c-.706.057-1.412.087-2.098.087m-1.834-.904c1.235.093 2.433.093 3.667 0a24.5 24.5 0 0 0 1.832-3.168a24 24 0 0 0-1.832-3.168a24 24 0 0 0-3.667 0a24 24 0 0 0-1.832 3.168a25 25 0 0 0 1.832 3.168"/></svg>
+                <div class="font-bold mt-2">React</div>
             </section>
-            <section class="border-2 p-4 w-32 flex flex-col items-center">
-                <svg class="w-15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6.357 9C3.72 9.68 2 10.845 2 12.175C2 14.282 6.405 16 11.85 16c.74 0 1.26-.039 1.95-.097"/><path d="M9.837 15.9c-.413-.596-.806-1.133-1.18-1.8c-2.751-4.9-3.488-9.77-1.63-10.873c1.15-.697 3.047.253 4.974 2.254"/><path d="M6.429 15.387c-.702 2.688-.56 4.716.56 5.395c1.783 1.08 5.387-1.958 8.043-6.804q.54-1.005.968-1.978"/><path d="M12 18.52c1.928 2 3.817 2.95 4.978 2.253c1.85-1.102 1.121-5.972-1.633-10.873c-.384-.677-.777-1.204-1.18-1.8"/><path d="M17.66 15c2.612-.687 4.34-1.85 4.34-3.176C22 9.714 17.592 8 12.155 8c-.747 0-1.266.029-1.955.087"/><path d="M8 12c.285-.66.607-1.308.968-1.978c2.647-4.844 6.253-7.89 8.046-6.801c1.11.679 1.262 2.706.56 5.393m-5.314 3.401h-.01c-.01.13-.12.24-.26.24a.263.263 0 0 1-.25-.26c0-.14.11-.25.24-.25h-.01c.13-.01.25.11.25.24"/></g></svg>
-                <div class="font-bold">ReactNative</div>
+
+            <section class="border-2 p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 bg-white rounded-lg aspect-square">
+                <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6.357 9C3.72 9.68 2 10.845 2 12.175C2 14.282 6.405 16 11.85 16c.74 0 1.26-.039 1.95-.097"/><path d="M9.837 15.9c-.413-.596-.806-1.133-1.18-1.8c-2.751-4.9-3.488-9.77-1.63-10.873c1.15-.697 3.047.253 4.974 2.254"/><path d="M6.429 15.387c-.702 2.688-.56 4.716.56 5.395c1.783 1.08 5.387-1.958 8.043-6.804q.54-1.005.968-1.978"/><path d="M12 18.52c1.928 2 3.817 2.95 4.978 2.253c1.85-1.102 1.121-5.972-1.633-10.873c-.384-.677-.777-1.204-1.18-1.8"/><path d="M17.66 15c2.612-.687 4.34-1.85 4.34-3.176C22 9.714 17.592 8 12.155 8c-.747 0-1.266.029-1.955.087"/><path d="M8 12c.285-.66.607-1.308.968-1.978c2.647-4.844 6.253-7.89 8.046-6.801c1.11.679 1.262 2.706.56 5.393m-5.314 3.401h-.01c-.01.13-.12.24-.26.24a.263.263 0 0 1-.25-.26c0-.14.11-.25.24-.25h-.01c.13-.01.25.11.25.24"/></g></svg>
+                <div class="font-bold mt-2">React Native</div>
             </section>
-            <section class="border-2 p-4 w-32 flex flex-col items-center">
-                <svg class="w-15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#000" d="M19.455 8.369c-.538-.748-1.778-2.285-3.681-4.569a447 447 0 0 0-1.884-2.245l-.488-.576l-.207-.245l-.113-.133l-.022-.032l-.01-.005L12.57 0l-.609.488a13.34 13.34 0 0 0-3.681 4.64a11.4 11.4 0 0 0-1.043 3.176a12 12 0 0 0-.121.738a11 11 0 0 0-.632-.033l-.059-.003a7.5 7.5 0 0 0-2.28.274l-.317.089l-.163.286a9.6 9.6 0 0 0-1.252 4.416a9.53 9.53 0 0 0 1.583 5.625a9.57 9.57 0 0 0 4.42 3.611l.236.095l.071.025l.003-.001a9.6 9.6 0 0 0 2.941.568q.171.006.342.006a9.5 9.5 0 0 0 3.69-.742l.008.004l.313-.145a9.63 9.63 0 0 0 3.927-3.335a9.6 9.6 0 0 0 1.641-5.042c.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695c.328 1.244.264 2.44-.191 3.558c-1.135-1.12-1.967-2.352-2.475-3.665c-.543-1.404-.87-2.74-.974-3.975c.48.157.922.366 1.315.622c1.132.737 1.914 1.902 2.325 3.461zm.207 6.022c.482.368.99.712 1.513 1.028a7.9 7.9 0 0 1-2.369.273a8 8 0 0 1-.373-.022a9 9 0 0 0 1.228-1.279zm1.347-6.431c-.516-1.957-1.527-3.437-3.002-4.398a7.4 7.4 0 0 0-2.194-.95a9 9 0 0 1 .089-.713a11.6 11.6 0 0 1 .91-2.765l.004-.008c.177-.358.376-.719.61-1.105l.092-.152l-.003-.001a11.7 11.7 0 0 1 1.942-2.311l.288.341c.672.796 1.304 1.548 1.878 2.237c1.291 1.549 2.966 3.583 3.612 4.48c1.277 1.771 1.893 3.579 1.83 5.375a7.97 7.97 0 0 1-3.995 6.641a15.5 15.5 0 0 1-2.539-1.599c.79-1.575.952-3.28.479-5.072zm-2.575 5.397a7.9 7.9 0 0 1-2.09 1.856a6 6 0 0 1-.243-.093l-.065-.026a7.97 7.97 0 0 1-3.635-3.01a7.94 7.94 0 0 1-1.298-4.653a7.9 7.9 0 0 1 .882-3.379q.476-.105.96-.131l.084-.002q.245-.005.478 0q.341.017.677.07c.073 1.513.445 3.145 1.105 4.852c.637 1.644 1.694 3.162 3.144 4.515z"/></svg>
-                <div class="font-bold">Firebase</div>
+
+            <section class="border-2 p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 bg-white rounded-lg aspect-square">
+                <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#000" d="M19.455 8.369c-.538-.748-1.778-2.285-3.681-4.569a447 447 0 0 0-1.884-2.245l-.488-.576l-.207-.245l-.113-.133l-.022-.032l-.01-.005L12.57 0l-.609.488a13.34 13.34 0 0 0-3.681 4.64a11.4 11.4 0 0 0-1.043 3.176a12 12 0 0 0-.121.738a11 11 0 0 0-.632-.033l-.059-.003a7.5 7.5 0 0 0-2.28.274l-.317.089l-.163.286a9.6 9.6 0 0 0-1.252 4.416a9.53 9.53 0 0 0 1.583 5.625a9.57 9.57 0 0 0 4.42 3.611l.236.095l.071.025l.003-.001a9.6 9.6 0 0 0 2.941.568q.171.006.342.006a9.5 9.5 0 0 0 3.69-.742l.008.004l.313-.145a9.63 9.63 0 0 0 3.927-3.335a9.6 9.6 0 0 0 1.641-5.042c.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695c.328 1.244.264 2.44-.191 3.558c-1.135-1.12-1.967-2.352-2.475-3.665c-.543-1.404-.87-2.74-.974-3.975c.48.157.922.366 1.315.622c1.132.737 1.914 1.902 2.325 3.461zm.207 6.022c.482.368.99.712 1.513 1.028a7.9 7.9 0 0 1-2.369.273a8 8 0 0 1-.373-.022a9 9 0 0 0 1.228-1.279zm1.347-6.431c-.516-1.957-1.527-3.437-3.002-4.398a7.4 7.4 0 0 0-2.194-.95a9 9 0 0 1 .089-.713a11.6 11.6 0 0 1 .91-2.765l.004-.008c.177-.358.376-.719.61-1.105l.092-.152l-.003-.001a11.7 11.7 0 0 1 1.942-2.311l.288.341c.672.796 1.304 1.548 1.878 2.237c1.291 1.549 2.966 3.583 3.612 4.48c1.277 1.771 1.893 3.579 1.83 5.375a7.97 7.97 0 0 1-3.995 6.641a15.5 15.5 0 0 1-2.539-1.599c.79-1.575.952-3.28.479-5.072zm-2.575 5.397a7.9 7.9 0 0 1-2.09 1.856a6 6 0 0 1-.243-.093l-.065-.026a7.97 7.97 0 0 1-3.635-3.01a7.94 7.94 0 0 1-1.298-4.653a7.9 7.9 0 0 1 .882-3.379q.476-.105.96-.131l.084-.002q.245-.005.478 0q.341.017.677.07c.073 1.513.445 3.145 1.105 4.852c.637 1.644 1.694 3.162 3.144 4.515z"/></svg>
+                <div class="font-bold mt-2">Firebase</div>
             </section>
         </section>
 
-        <section class="bg-black py-16 text-white">
-            <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl text-center mb-16">My <span class="font-bold">Experience</span></h2>
+        <section class="bg-black py-16">
+            <section class="max-w-4xl mx-auto px-4">
+                <section class="text-[30px] pb-10 text-center text-white">My <span class="font-bold">Experience</span></section>
 
-                <div class="space-y-8">
-                    <div class="border border-gray-800 bg-[#0f0f0f] p-6 md:p-8 rounded-2xl hover:border-gray-600 transition duration-300">
-                        <div class="flex flex-col md:flex-row md:items-center gap-6 mb-6">
-                            <img src="enactus tasued.jpeg" alt="Enactus-Tasued image" class="w-16 h-16 object-contain">
-                            <div>
-                                <h3 class="font-bold text-xl md:text-2xl">Lead Frontend Engineer</h3>
-                                <div class="text-gray-400 text-sm mt-1">Enactus TASUED • March 2025 - Present</div>
-                            </div>
+                <section class="border border-[#404040] rounded-xl mb-6 p-6">
+                    <section class="flex flex-col md:flex-row md:items-center gap-6 mb-6">
+                        <img src="enactus tasued.jpeg" alt="Enactus-Tasued image" class="w-20 object-cover">
+                        <div class="text-white">
+                            <h3 class="font-bold text-xl md:text-2xl">Lead Frontend Engineer</h3>
+                            <div class="text-gray-400 text-sm mt-1">Enactus TASUED • March 2025 - Present</div>
                         </div>
-                        <div class="text-gray-300 leading-relaxed text-justify hyphens-auto">
-                            Spearheaded the frontend architecture for the organization's key digital initiatives. I engineered <strong>VerifyEd</strong>, a scalable verification platform that reduces administrative data fraud. By leveraging React.js and Firebase, I optimized data retrieval speeds and ensured real-time synchronization. My role involved defining the technical roadmap, mentoring junior developers on best practices, and driving the delivery of production-ready code in an Agile environment.
-                        </div>
-                    </div>
+                    </section>
+                    <section class="text-gray-300 font-light leading-relaxed text-justify hyphens-auto">
+                        Spearheaded the frontend architecture for the organization's key digital initiatives. I engineered <strong>VerifyEd</strong>, a scalable verification platform that reduces administrative data fraud. By leveraging React.js and Firebase, I optimized data retrieval speeds and ensured real-time synchronization. My role involved defining the technical roadmap, mentoring junior developers on best practices, and driving the delivery of production-ready code in an Agile environment.
+                    </section>
+                </section>
 
-                    <div class="border border-gray-800 bg-[#0f0f0f] p-6 md:p-8 rounded-2xl hover:border-gray-600 transition duration-300">
-                        <div class="flex flex-col md:flex-row md:items-center gap-6 mb-6">
-                            <img src="Edtech_coe-removebg-preview.png" alt="EdTech Logo" class="w-16 h-16 object-contain">
-                            <div>
-                                <h3 class="font-bold text-xl md:text-2xl">Frontend Developer</h3>
-                                <div class="text-gray-400 text-sm mt-1">EdTech Center of Excellence • July 2025 - Sept 2025</div>
-                            </div>
+                <section class="border border-[#404040] rounded-xl p-6">
+                    <section class="flex flex-col md:flex-row md:items-center gap-6 mb-6">
+                        <img src="Edtech_coe-removebg-preview.png" alt="EdTech Logo" class="w-20 object-contain">
+                        <div class="text-white">
+                            <h3 class="font-bold text-xl md:text-2xl">Frontend Developer</h3>
+                            <div class="text-gray-400 text-sm mt-1">EdTech Center of Excellence • July 2025 - Sept 2025</div>
                         </div>
-                        <div class="text-gray-300 leading-relaxed text-justify hyphens-auto">
-                            Executed the development of responsive, accessible user interfaces for educational technology platforms. I translated complex design systems into modular web components using modern JavaScript frameworks. Focused on performance optimization, I successfully improved load times and cross-browser compatibility. Collaborated closely with backend engineers and product managers to ensure seamless API integration and high-quality user experiences.
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </section>
+                    <section class="text-gray-300 font-light leading-relaxed text-justify hyphens-auto">
+                        Executed the development of responsive, accessible user interfaces for educational technology platforms. I translated complex design systems into modular web components using modern JavaScript frameworks. Focused on performance optimization, I successfully improved load times and cross-browser compatibility. Collaborated closely with backend engineers and product managers to ensure seamless API integration and high-quality user experiences.
+                    </section>
+                </section>
+            </section>
         </section>
 
-        <section class="mt-8 flex flex-col items-center "> 
-            <img src="Board Games 1.png" alt="About me illustration" class="w-90 ">
+        <section class="mt-16 flex flex-col items-center px-4"> 
+            <img src="Board Games 1.png" alt="About me illustration" class="w-full max-w-sm md:max-w-md">
         </section>
         
-        <section class="max-w-4xl mx-auto px-6 py-7 text-justify hyphens-auto">
-            <p class="mb-4">
+        <section class="py-10 px-4 max-w-3xl mx-auto text-justify hyphens-auto leading-relaxed text-gray-800 text-lg">
+            <p class="mb-6">
                 I build high-performance web applications that solve real user problems. As a Frontend Engineer with a background in Computer Science, I bridge the gap between complex code and intuitive user experiences.
             </p>
-            <p class="mb-4">
-                I don't just write code; I create digital solutions that are responsive, accessible, and scalable. My core focus involves translating design concepts into functional, bug-free code using <span class="font-semibold">JavaScript, React, and Tailwind CSS</span>.
+            <p class="mb-6">
+                I don't just write code; I create digital solutions that are responsive, accessible, and scalable. My core focus involves translating design concepts into functional, bug-free code using <span class="font-semibold text-black">JavaScript, React, and Tailwind CSS</span>.
             </p>
-            <p class="mb-4">
+            <p class="mb-6">
                 Beyond the screen, I leverage my leadership experience to manage teams and drive impactful projects. I am driven by the impact technology has on education and business sustainability.
             </p>
             <p>
@@ -175,61 +180,49 @@
         </section>
 
 
-        <section class="bg-black text-white py-16">
-            <div class="max-w-5xl mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl text-center mb-16">Featured <span class="font-bold">Projects</span></h2>
+        <section class="bg-black py-16">
 
-                <div class="mb-20">
-                    <div class="group relative overflow-hidden rounded-2xl mb-6">
-                        <img src="insights.PNG" alt="Insights Project" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition duration-300"></div>
-                    </div>
-                    
-                    <div class="flex items-end justify-between mb-4">
-                        <div class="text-6xl font-bold text-gray-800 select-none">01</div>
-                        <a href="https://vincen-coder.github.io/My-Tailwind-Project/" target="_blank" class="p-2 border border-white/20 rounded-full hover:bg-white hover:text-black transition">
+            <section class="text-[30px] text-center pb-12 text-white">Featured <span class="font-bold">Projects</span></section>
+
+            <section class="max-w-4xl mx-auto px-4">
+                <section class="text-left mb-16">
+                    <img src="insights.PNG" alt="Insights Project" class="w-full rounded-lg mb-6 hover:opacity-90 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="font-bold text-white text-3xl">01</div>
+                        <a href="https://vincen-coder.github.io/My-Tailwind-Project/" target="_blank" class="p-2 border border-white rounded-full hover:bg-white hover:text-black transition">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                         </a>
                     </div>
-                    
-                    <h3 class="text-2xl font-bold mb-3">Insights – Zero to Dev</h3>
-                    <div class="text-gray-400 leading-relaxed text-justify hyphens-auto max-w-3xl">
-                        Aspiring developers often struggle to find actionable career roadmaps and mentorship. I engineered <span class="text-white font-bold">Insights</span>, a responsive content platform designed to bridge this gap. It features a curated collection of developer success stories and technical pathways, built with a focus on performance and mobile-first design principles using Tailwind CSS.
+                    <div class="text-gray-300 font-light leading-relaxed text-justify hyphens-auto">
+                        Aspiring developers often struggle to find actionable career roadmaps and mentorship. I engineered <span class="font-bold text-white">Insights</span>, a responsive content platform designed to bridge this gap. It features a curated collection of developer success stories and technical pathways, built with a focus on performance and mobile-first design principles using Tailwind CSS.
                     </div>
-                </div>
+                </section>
 
-                <div class="mb-12">
-                    <div class="group relative overflow-hidden rounded-2xl mb-6">
-                        <img src="vv.PNG" alt="VerifyEd Project" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
-                         <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition duration-300"></div>
-                    </div>
-
-                    <div class="flex items-end justify-between mb-4">
-                        <div class="text-6xl font-bold text-gray-800 select-none">02</div>
-                        <a href="https://verifyed-xi.vercel.app/dashboard.html" target="_blank" class="p-2 border border-white/20 rounded-full hover:bg-white hover:text-black transition">
+                <section class="text-left mb-8">
+                    <img src="vv.PNG" alt="VerifyEd Project" class="w-full rounded-lg mb-6 hover:opacity-90 transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="font-bold text-white text-3xl">02</div>
+                        <a href="https://verifyed-xi.vercel.app/dashboard.html" target="_blank" class="p-2 border border-white rounded-full hover:bg-white hover:text-black transition">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                         </a>
                     </div>
-
-                    <h3 class="text-2xl font-bold mb-3">VerifyEd</h3>
-                    <div class="text-gray-400 leading-relaxed text-justify hyphens-auto max-w-3xl">
-                        Manual internship verification is often slow, inefficient, and prone to data discrepancies. <span class="text-white font-bold">VerifyEd</span> is a digital verification system I developed to automate the authentication of student records. It provides institutions and employers with a secure, real-time dashboard to validate data, significantly reducing administrative bottlenecks and fraud.
+                    <div class="text-gray-300 font-light leading-relaxed text-justify hyphens-auto">
+                        Manual internship verification is often slow, inefficient, and prone to data discrepancies. <span class="font-bold text-white">VerifyEd</span> is a digital verification system I developed to automate the authentication of student records. It provides institutions and employers with a secure, real-time dashboard to validate data, significantly reducing administrative bottlenecks and fraud.
                     </div>
-                </div>
-                
-                <div class="text-center pt-10 border-t border-gray-800">
-                    <span class="text-gray-500 italic">and many more...</span>
-                </div>
-            </div>
+                </section>
+
+                <section class="text-gray-500 text-center italic mt-10">and many more...</section>
+            </section>
         </section>
     </main>
 
     <footer class="bg-black border-t border-gray-900 py-8">
-        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center text-white">
-            <div class="text-2xl font-bold">Vincent.</div>
-            <div class="text-sm text-gray-500">&copy; 2025 Vincent Omoseebi</div>
-        </div>
+        <section class="max-w-6xl mx-auto flex justify-between px-6 items-center">
+            <div class="text-[20px] font-bold text-white">Vincent.</div>
+            <div class="text-gray-500 text-sm">&copy; 2025 Vincent Omoseebi</div>
+        </section>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

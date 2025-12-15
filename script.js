@@ -1,25 +1,31 @@
 window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
+	const preloader = document.getElementById('preloader');
 
-    // Small delay (1.5s) to ensure the layout is settled and the user sees the logo
-    setTimeout(() => {
-      // 1. Fade out visually
-      preloader.classList.add('opacity-0');
-      
-      // 2. Remove from layout after fade is done (0.7s matches duration-700)
-      setTimeout(() => {
-        preloader.classList.add('hidden');
-      }, 700);
-      
-    }, 3500); 
+	// Smooth fade out logic
+	if (preloader) {
+		setTimeout(() => {
+			preloader.classList.add('opacity-0'); // Trigger fade out
+
+			// Remove from DOM after fade completes
+			setTimeout(() => {
+				preloader.style.display = 'none';
+			}, 700);
+		}, 2000); // 2 seconds load time is usually enough
+	}
 });
 
-const openbtn = document.getElementById("open-btn");
-const closebtn = document.getElementById("close-btn");
+const openbtn = document.getElementById('open-btn');
+const closebtn = document.getElementById('close-btn');
+const menu = document.getElementById('sect');
 
-openbtn.addEventListener('click', () => {
-    document.getElementById('sect').style.display = "block"
-})
-closebtn.addEventListener('click', () => {
-    document.getElementById('sect').style.display = "none"
-})
+if (openbtn && closebtn && menu) {
+	openbtn.addEventListener('click', () => {
+		menu.classList.remove('hidden');
+		menu.style.display = 'flex'; // Ensure it uses flex layout
+	});
+
+	closebtn.addEventListener('click', () => {
+		menu.classList.add('hidden');
+		menu.style.display = 'none';
+	});
+}
